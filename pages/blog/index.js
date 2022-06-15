@@ -1,13 +1,21 @@
+import Head from "next/head";
+import Link from "next/link";
 function Blog(props) {
   const { posts } = props;
   return (
     <>
+      <Head>
+        <title>Blog | Next Projects</title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       {posts?.map((post) => {
         return (
-          <div key={post.id}>
-            <p>
-              {post.id} {post.title}
-            </p>
+          <div key={post.id} style={{ borderBottom: "1px solid #eee" }}>
+            <Link href={`/blog/${post.id}`}>
+              <p>
+                {post.id} {post.title}
+              </p>
+            </Link>
           </div>
         );
       })}

@@ -1,3 +1,4 @@
+import Head from "next/head";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 function Blog() {
@@ -16,14 +17,19 @@ function Blog() {
       }
     }
   }, [postId]);
-  if (post) {
-    return (
-      <>
-        <h2>{post?.title}</h2>
-        <div>{post?.body}</div>
-      </>
-    );
-  }
-  return <></>;
+  return (
+    <>
+      <Head>
+        <title>Blog View | Next Projects</title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+      {post && (
+        <>
+          <h2>{post?.title}</h2>
+          <div>{post?.body}</div>
+        </>
+      )}
+    </>
+  );
 }
 export default Blog;

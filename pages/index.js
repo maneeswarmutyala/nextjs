@@ -19,45 +19,33 @@ export default function Home() {
           <Link href="/blog">
             <a className="card">
               <h3>Blog &rarr;</h3>
-              <p>Blog using fake data https://jsonplaceholder.typicode.com/</p>
+              <p>Blog Page using SSG </p>
             </a>
           </Link>
           <Link href="/users">
             <a className="card">
               <h3>Users &rarr;</h3>
-              <p>Search Users </p>
+              <p>Search Users, debouncing </p>
             </a>
           </Link>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className="card"
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className="card"
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+          <Link href="/photos">
+            <a className="card">
+              <h3>Photos &rarr;</h3>
+              <p>Flexbox, Grid</p>
+            </a>
+          </Link>
+          <Link href="/todo">
+            <a className="card">
+              <h3>To do &rarr;</h3>
+              <p>
+                Instantly deploy your Next.js site to a public URL with Vercel.
+              </p>
+            </a>
+          </Link>
         </div>
       </main>
 
-      <footer>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by <img src="/vercel.svg" alt="Vercel" className="logo" />
-        </a>
-      </footer>
+      <footer>Next js projects by Maneeswar Mutyala</footer>
 
       <style jsx>{`
         .container {

@@ -1,3 +1,4 @@
+import Head from "next/head";
 import { useState, useEffect } from "react";
 function Users() {
   const [userData, setUserData] = useState(null);
@@ -43,6 +44,10 @@ function Users() {
   const handleUsers = debounce((e) => fetchUser(e));
   return (
     <>
+      <Head>
+        <title>Search Users | Next Projects</title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <div>
         <div>
           <p>With Debounce</p>
