@@ -25,7 +25,10 @@ export default function Home() {
           <Link href="/users">
             <a className="card">
               <h3>Users &rarr;</h3>
-              <p>Search Users, debouncing </p>
+              <p>
+                Search Users, debouncing, controlled component, useEffect and
+                useState Hooks
+              </p>
             </a>
           </Link>
           <Link href="/photos">
