@@ -6,7 +6,7 @@ function TodoContainer() {
     const resp = await fetch("https://jsonplaceholder.typicode.com/todos");
     const data = await resp.json();
     setTodos(data.slice(0, 15));
-  });
+  },[]);
   return (
     <>
       <h2>To Do List</h2>

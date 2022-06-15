@@ -34,14 +34,14 @@ export default function Home() {
           <Link href="/photos">
             <a className="card">
               <h3>Photos &rarr;</h3>
-              <p>Flexbox, Grid</p>
+              <p>Flexbox, Grid, Server Side Rendering</p>
             </a>
           </Link>
           <Link href="/todo">
             <a className="card">
               <h3>To do &rarr;</h3>
               <p>
-                Instantly deploy your Next.js site to a public URL with Vercel.
+               Client Side Data Fetching Using Fetch, useEffect, useState
               </p>
             </a>
           </Link>

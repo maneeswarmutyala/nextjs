@@ -1,12 +1,6 @@
 import Head from "next/head";
-import { useEffect, useState } from "react";
-function Albums() {
-  const [photos, setPhotos] = useState([]);
-  useEffect(async () => {
-    const resp = await fetch("https://jsonplaceholder.typicode.com/photos");
-    const data = await resp.json();
-    setPhotos(data.slice(0, 15));
-  });
+function Albums(props) {
+  const { photos } = props;
   return (
     <>
       <Head>
@@ -75,3 +69,12 @@ function Albums() {
   );
 }
 export default Albums;
+export async function getServerSideProps() {
+  const resp = await fetch("https://jsonplaceholder.typicode.com/photos");
+  const data = await resp.json();
+  return {
+    props: {
+      photos: data.slice(0, 15),
+    },
+  };
+}

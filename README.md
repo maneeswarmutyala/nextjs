@@ -1,6 +1,5 @@
 NextJS - Learning Projects
 
-
 1.Blog
 
 * Static Site Generation Using getStaticProps
@@ -19,3 +18,8 @@ NextJS - Learning Projects
 
 * Flexbox
 * Grid
+* Server Side Rendering
+
+4.ToDo List
+
+* Client Side Data Fetching Using Fetch, useEffect, useState

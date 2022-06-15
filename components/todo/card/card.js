@@ -7,7 +7,14 @@ function Card(props) {
       <div className={styles.cardWrapper}>
         <p>{todoData?.id}</p>
         <h3> {todoData?.title} </h3>
-        <p>Status: {todoData?.completed ? "Done" : "To DO"} </p>
+        <p
+          className={styles.status}
+          style={{
+            backgroundColor: todoData?.completed ? "green" : "burlywood",
+          }}
+        >
+          {todoData?.completed ? "Done" : "Todo"}{" "}
+        </p>
       </div>
     </div>
   );

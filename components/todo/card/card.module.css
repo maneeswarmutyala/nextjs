@@ -1,11 +1,21 @@
+
 .card {
   border: 1px solid #eee;
   width: 100%;
   max-width: 800px;
+  font-family:Arial, Helvetica, sans-serif;
 }
 .cardWrapper {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding: 10px 30px;
+}
+.status {
+  background-color: burlywood;
+  padding: 2px 9px;
+  height: fit-content;
+  box-shadow: 2px 2px 2px 2px rgb(0 0 0 / 5%);
+  color: #ffff;
+  border-radius: 7px;
 }
