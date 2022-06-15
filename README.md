@@ -13,7 +13,7 @@ NextJS - Learning Projects
 * Controlled Component
 * useEffect and useState Hooks
 
-3. Photos
+3.Photos
 
 * Flexbox
 * Grid
