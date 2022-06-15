@@ -1,4 +1,6 @@
 NextJS - Learning Projects
+
+
 1.Blog
 
 * Static Site Generation Using getStaticProps
