@@ -1,5 +1,5 @@
-import Head from 'next/head'
-import Link from 'next/link'
+import Head from "next/head";
+import Link from "next/link";
 export default function Home() {
   return (
     <div className="container">
@@ -13,22 +13,21 @@ export default function Home() {
           Welcome to <a href="#">Next.js Projects!</a>
         </h1>
 
-        <p className="description">
-          Click on the project and view
-        </p>
+        <p className="description">Click on the project and view</p>
 
         <div className="grid">
           <Link href="/blog">
-          <a  className="card">
-            <h3>Blog &rarr;</h3>
-            <p>Blog using fake data https://jsonplaceholder.typicode.com/</p>
-          </a>
+            <a className="card">
+              <h3>Blog &rarr;</h3>
+              <p>Blog using fake data https://jsonplaceholder.typicode.com/</p>
+            </a>
           </Link>
-
-          <a href="https://nextjs.org/learn" className="card">
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
+          <Link href="/users">
+            <a className="card">
+              <h3>Users &rarr;</h3>
+              <p>Search Users </p>
+            </a>
+          </Link>
 
           <a
             href="https://github.com/vercel/next.js/tree/master/examples"
@@ -56,8 +55,7 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel" className="logo" />
+          Powered by <img src="/vercel.svg" alt="Vercel" className="logo" />
         </a>
       </footer>
 
@@ -207,5 +205,5 @@ export default function Home() {
         }
       `}</style>
     </div>
-  )
+  );
 }
