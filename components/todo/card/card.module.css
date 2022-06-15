@@ -1,0 +1,11 @@
+.card {
+  border: 1px solid #eee;
+  width: 100%;
+  max-width: 800px;
+}
+.cardWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px 30px;
+}
