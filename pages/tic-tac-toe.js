@@ -39,6 +39,18 @@ function Game() {
         ></script>
       </Head>
       <TicTacToe />
+      <a
+        href="https://www.hitwebcounter.com"
+        target="_blank"
+        style={{  visibility: 'hidden'}}
+      >
+        <img
+          src="https://hitwebcounter.com/counter/counter.php?page=8008103&style=0005&nbdigits=9&type=page&initCount=0"
+          title="Free Counter"
+          alt="web counter"
+          border="0"
+        />
+      </a>
     </>
   );
 }
