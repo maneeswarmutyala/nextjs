@@ -29,6 +29,20 @@ export default function Home() {
           property="og:description"
           content="Todo,Blog, Tic tac toe, Photos Listing Using Flexbox and Grid, Nextjs Project"
         />
+          <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-DGCGRP4NKE"
+        ></script>
+        <script
+          async
+          dangerouslySetInnerHTML={{
+            __html: ` window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+        
+          gtag('config', 'G-DGCGRP4NKE');`,
+          }}
+        ></script>
       </Head>
 
       <main>

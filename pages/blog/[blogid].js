@@ -43,6 +43,20 @@ function Blog() {
           property="og:description"
           content="Blog Listing, Nextjs Project"
         />
+          <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-DGCGRP4NKE"
+        ></script>
+        <script
+          async
+          dangerouslySetInnerHTML={{
+            __html: ` window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+        
+          gtag('config', 'G-DGCGRP4NKE');`,
+          }}
+        ></script>
       </Head>
       <div className="container">
         <Link href="/blog"> Go to Blog</Link>

@@ -75,6 +75,20 @@ function Users() {
           property="og:description"
           content="Search Users With Debouncing Method, NextJs Project"
         />
+          <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-DGCGRP4NKE"
+        ></script>
+        <script
+          async
+          dangerouslySetInnerHTML={{
+            __html: ` window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+        
+          gtag('config', 'G-DGCGRP4NKE');`,
+          }}
+        ></script>
       </Head>
       <div className="container">
         <Link href="/"> Go to Home</Link>
