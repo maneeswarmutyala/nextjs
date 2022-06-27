@@ -45,6 +45,14 @@ export default function Home() {
               </p>
             </a>
           </Link>
+          <Link href="/tic-tac-toe">
+            <a className="card">
+              <h3>Tic Tac Toe &rarr;</h3>
+              <p>
+                Game
+              </p>
+            </a>
+          </Link>
         </div>
       </main>
 
