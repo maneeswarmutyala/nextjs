@@ -4,13 +4,37 @@ export default function Home() {
   return (
     <div className="container">
       <Head>
-        <title>Next Projects</title>
+        <title>NextJs Projects</title>
         <link rel="icon" href="/favicon.ico" />
+        <meta name="author" content="Maneeswar Mutyala" />
+        <meta
+          name="keywords"
+          content="todo list,photos listing,flexbox,grid,nextjs,json placeholder"
+        />
+        <meta
+          name="description"
+          content="Photos Listing Using Flexbox and Grid, With Json Placeholder API"
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="robots" content="INDEX,FOLLOW" />
+        <meta
+          property="og:image"
+          content="https://avatars.githubusercontent.com/u/44763136?s=400&u=27ce34de0b72f59ac2894407853898a86e475b86&v=4"
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://github.com/maneeswarmutyala" />
+        <meta property="og:title" content="Next Js Projects" />
+        <meta property="og:site_name" content="Next Js Projects" />
+        <meta
+          property="og:description"
+          content="Todo,Blog, Tic tac toe, Photos Listing Using Flexbox and Grid, Nextjs Project"
+        />
       </Head>
 
       <main>
         <h1 className="title">
-          Welcome to <a href="#">Next.js Projects!</a>
+          Welcome to{" "}
+          <a href="https://github.com/maneeswarmutyala">Next.js Projects!</a>
         </h1>
 
         <p className="description">Click on the project and view</p>
@@ -40,17 +64,13 @@ export default function Home() {
           <Link href="/todo">
             <a className="card">
               <h3>To do &rarr;</h3>
-              <p>
-               Client Side Data Fetching Using Fetch, useEffect, useState
-              </p>
+              <p>Client Side Data Fetching Using Fetch, useEffect, useState</p>
             </a>
           </Link>
           <Link href="/tic-tac-toe">
             <a className="card">
               <h3>Tic Tac Toe &rarr;</h3>
-              <p>
-                Game
-              </p>
+              <p>Game</p>
             </a>
           </Link>
         </div>
