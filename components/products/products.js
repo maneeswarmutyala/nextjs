@@ -5,8 +5,9 @@ const Products = (props) => {
   const { products, count } = props;
   const [list, setList] = useState(products);
   const getNextPageData = (page) => {
-    console.log(page, products);
-    setList(products.splice(0, 8));
+    const start = (page * 8 ) - 8;
+    const end = page * 8;
+    setList(products.slice(start, end));
   };
   const getPagination = () => {
     const paginationCount = parseInt((count / 8).toFixed());
@@ -29,7 +30,7 @@ const Products = (props) => {
         .then((res) => res.json())
         .then((products) => setList(products));
     } else {
-      setList(list.splice(0, 8));
+      setList(list.slice(0, 8));
     }
   }, []);
   return (
