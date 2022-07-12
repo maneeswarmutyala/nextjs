@@ -1,0 +1,75 @@
+.popUpoverlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999999;
+  .ytcontainer {
+    width: 90vw;
+    height: 90vh;
+    display: inline-flex;
+    @media (max-width: 768px) {
+      height: 28vh;
+    }
+  }
+  .overlayClass {
+    background: unset;
+  }
+}
+.popUpholder {
+  background-color: #fff;
+  text-align: center;
+  position: relative;
+  border-radius: 10px;
+  width: 500px;
+  height: 600px;
+  .crossclose {
+    text-align: right;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+  }
+}
+
+.crossClose {
+  .closeHolder {
+    position: absolute;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+    &:after,
+    &:before {
+      content: "";
+      width: 0;
+      height: 0;
+      padding: 8px;
+      display: inline-block;
+      border: 1px solid #989696;
+      border-width: 0 0 1px 0;
+      transform: rotate(45deg);
+      position: absolute;
+      top: 4px;
+      right: 5px;
+    }
+    &:before {
+      transform: rotate(135deg);
+      top: 15px;
+    }
+  }
+  .closeIcon {
+    width: 23px;
+    height: 23px;
+    margin: 20px;
+  }
+}

@@ -1,0 +1,12 @@
+export const constants = {
+  SUCCESS: "SUCCESS",
+  IN_PROGRESS: "IN_PROGRESS",
+  CANCELLED: "CANCELLED",
+  JOBS_COMPLETED: "JOBS_COMPLETED",
+  PENDING: "PENDING",
+  FAILED: "FAILED",
+  JOBS_SCHEDULED: "JOBS_SCHEDULED",
+  ORDER_PLACED: "ORDER_PLACED",
+};
+
+export const API_ENDPOINT = "http://localhost/ssit/api/"

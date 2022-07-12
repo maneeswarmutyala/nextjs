@@ -1,4 +1,3 @@
-
 html,
 body {
   padding: 0;
@@ -19,4 +18,84 @@ a {
   margin-left: auto;
   margin-right: auto;
   width: 100%;
+}
+.error-label {
+  padding: 4px 8px;
+  background-color: red;
+  color: #fff;
+  opacity: 0.8;
+  width: max-content;
+}
+.success-label {
+  @extend .error-label;
+  background-color: green;
+}
+.info-label {
+  @extend .error-label;
+  background-color: cornflowerblue;
+}
+.progress-label {
+  @extend .error-label;
+  background-color: indianred;
+}
+button {
+  padding: 8px 12px;
+  border: none;
+  color: #fff;
+  background-color: coral;
+  cursor: pointer;
+}
+.btn-default {
+  @extend button;
+  text-decoration: none;
+  display: flex;
+}
+ul {
+  padding: 0px;
+}
+li {
+  list-style: none;
+  padding: 4px 8px;
+  background-color: cornflowerblue;
+  margin-bottom: 2px;
+  color: #fff;
+  &:nth-child(2) {
+    background-color: cadetblue;
+  }
+  &:nth-child(3n-2) {
+    background-color: darkcyan;
+  }
+}
+
+input {
+  padding: 8px 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+table,
+th,
+td {
+  border: 1px solid black;
+}
+td,
+th {
+  padding: 8px;
+}
+
+th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #eee;
+  color: black;
+}
+button[disabled] {
+ pointer-events: none;
+ opacity: 0.4;
 }
